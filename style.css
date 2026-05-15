@@ -1,0 +1,320 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: rgb(0, 0, 0);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  height: 80px;
+  background-color:black;
+  color: white;
+}
+
+.leftnav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.middlenav{
+  display: flex;
+  gap: 5px;
+}
+.searchbox{
+  background-color:rgb(51, 47, 47) ;
+  width: 25rem;
+  height: 3rem;
+  border: none;
+  border-radius: 30px;
+  padding: 1rem;
+  color: white;
+}
+.rightnav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+img {
+  display: block;
+}
+.leftcontainer{
+    width: 25vw;
+    background-color: rgb(31, 29, 29);
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    height: calc(100vh - 80px); /* 80px = teri navbar ki height */
+    overflow: hidden;
+    
+}
+.firstrow{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    gap: 15px;
+}
+
+.firstrow p {
+  color: white;
+}
+.secondrow{
+    display: flex;
+    justify-content: start;
+    margin:  0 1rem;
+    gap: 1rem;
+}
+.thirdrow{
+    display: flex;
+    margin: 1rem;
+    justify-content: space-between;
+}
+
+.flex{
+    display: flex;
+}
+.btn{
+    background-color: rgba(87, 84, 84, 0.733);
+    color: rgb(219, 223, 219);
+    border: none;
+    border-radius: 20px;
+    padding-left:1rem;
+    padding-right: 1rem;
+    text-align: center;
+    height: 2.5rem;
+    margin-right: 5px;
+}
+.signupbtn{
+  background-color: transparent;
+  color: rgb(153, 150, 150);
+  border-width: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: 700;
+  line-height: inherit;
+  padding: 0;
+}
+.signupbtn:hover{
+  color: white;
+  transform: scale(1.05);
+  transition-duration: 0.2ms;
+  transition: all 0.2s ease-in-out;
+}
+.loginbtn{
+  border: none;
+  border-radius: 40px;
+  background-color: white(95, 92, 92);
+  color: rgb(0, 0, 0);
+  height: 2.7rem;
+  width: 6rem;
+  font-size: 16px;
+  font-weight: 700;
+}
+.hovering:hover{
+  transform: scale(1.05);
+  transition-duration: 0.2ms;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover{
+  background-color: rgb(141, 137, 137);
+}
+
+.library-section{
+  background-color: rgb(51, 47, 47);
+  border: none;
+  border-radius: 7px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  
+}
+.library-empty{
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  
+}
+.library-empty button{
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 30px;
+  height: 2.2rem;
+  width: 7rem;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+.login-section{
+  margin-top: 1rem;
+  background-color: rgb(51, 47, 47);
+  border: none;
+  border-radius: 7px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.login{
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.login button{
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 30px;
+  height: 2.5rem;
+  width: 7rem;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+.legal-links {
+  padding: 16px;
+  margin-top: auto; /* pushes to bottom */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.legal-links a {
+  color: #aaa;
+  font-size: 11px;
+  text-decoration: none;
+}
+.legal-links a:hover {
+  color: white;
+}
+
+.legal-links p {
+  width: 100%;
+  color: #aaa;
+  font-size: 11px;
+  margin-top: 8px;
+}
+.greeting{
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.right-container{
+    width: 75vw;
+    background-color: rgb(31, 29, 29);
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    height: calc(100vh - 80px); /* 80px = teri navbar ki height */
+    overflow: hidden;
+}
+.container{
+  display: flex;
+  gap: 8px;
+}
+.filter-tabs{
+  padding-left: 1rem;
+}
+.innerCard{
+  height: 10rem;
+  width: 10.1rem;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  padding: 2.9rem;
+  margin: 0.9rem;
+}
+.card{
+  margin: 20px;
+  width: 12rem;
+  height: 15rem;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(51, 47, 47);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  
+}
+
+.card h1{
+  font-size: 1.3rem;
+  padding-left:13px;
+}
+.card p{
+  font-size: 0.8rem;
+  padding-left: 13px;
+}
+.albumCards{
+  display: flex;
+}
+.blue{
+  background-color: rgb(33, 33, 88);
+}
+.green{
+  background-color: rgb(31, 83, 31);
+}
+.red{
+  background-color: rgb(116, 50, 50);
+}
+.pink{
+  background-color: rgb(223, 120, 137);
+}
+
+.section-divider {
+  border: none;
+  border-top: 5px solid #2a2a2a;
+  margin: 10px 0;
+}
+.fmtxt{
+  display: flex;
+  gap: 10px;
+  margin: 1rem;
+  color: white;
+  font-size: 0.9rem;
+}
+.channel{
+  width: 12rem;
+  height: 5rem;
+  background-color: rgb(51, 47, 47);
+  border: none;
+  border-radius: 8px;
+  margin-left: 1rem;
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+.channel h2{
+  font-size: 1rem;
+}
+.innerfmbox{
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fmChannels{
+  display: flex;
+  flex-direction: row;
+  gap: 1.6rem;
+}
+.channel:hover{
+  background-color:rgb(109, 104, 104) ;
+  transition: all 0.2s ease-in-out;
+}
+.card:hover{
+  background-color:rgb(109, 104, 104);
+  transition: all 0.2s ease-in-out;
+}

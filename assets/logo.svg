@@ -1,0 +1,18 @@
+<svg width="340" height="80" viewBox="0 0 340 80" xmlns="http://www.w3.org/2000/svg">
+<style>
+  @keyframes pulse-dot { 0%,100%{r:6} 50%{r:8} }
+  @keyframes wave1 { 0%,100%{opacity:1} 50%{opacity:0.3} }
+  @keyframes wave2 { 0%,100%{opacity:0.65} 50%{opacity:0.15} }
+  @keyframes wave3 { 0%,100%{opacity:0.35} 50%{opacity:0.08} }
+  .dot  { animation: pulse-dot 1.6s ease-in-out infinite; }
+  .arc1 { animation: wave1 1.6s ease-in-out infinite; }
+  .arc2 { animation: wave2 1.6s ease-in-out infinite; animation-delay:.2s }
+  .arc3 { animation: wave3 1.6s ease-in-out infinite; animation-delay:.4s }
+</style>
+<circle cx="40" cy="40" r="36" fill="#7C3AED"/>
+<circle class="dot" cx="40" cy="46" r="6" fill="white"/>
+<path class="arc1" d="M 24 36 A 17 17 0 0 1 56 36" fill="none" stroke="white" stroke-width="4.5" stroke-linecap="round"/>
+<path class="arc2" d="M 15 27 A 26 26 0 0 1 65 27" fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round"/>
+<path class="arc3" d="M 7 19 A 34 34 0 0 1 73 19" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+<text x="90" y="47" font-family="sans-serif" font-size="32" font-weight="700" fill="#ffffff" letter-spacing="-1">Aura <tspan fill="#7C3AED">FM</tspan></text>
+</svg>

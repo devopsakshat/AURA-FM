@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura FM — Feel the frequency.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="leftnav">
+            <img  class="hovering" src="assets/logo.svg" alt="Aura FM" height="40">
+            <img class="homebtn hovering" src="assets/home.svg" alt="Home" width="24" height="24">
+            
+        </div>
+        <div class="middlenav">
+            <img class="hovering" src="assets/searchicon.svg" alt="">
+            <input class="searchbox "  type="text" placeholder="What do you want to play?"> 
+        </div>
+        <div class="rightnav">
+            <button class="signupbtn">Sign Up</button>
+            <button class="loginbtn hovering">Log In</button>
+        </div>
+    </nav>
+<div class="container">
+    <div class="leftcontainer">
+    <div class="left">
+        <div class="firstrow">
+            <p>Your Library</p>
+            <div>
+                <button class="hovering"><img src="assets/plusicon.svg" alt=""></button>
+            </div>
+            
+        </div>
+       <!--  
+        <div class="secondrow">
+            <button class="btn">Playlists</button>
+            <button class="btn">Artists</button>
+            <button class="btn">Albums</button>
+        </div>
+        <div class="thirdrow">
+            <img src="assets/searchicon.svg" alt="">
+            <img src="assets/menu.svg" alt="">
+        </div>
+        -->
+    </div>
+    <div class="library-section">
+        <div class="library-empty">
+            <h3>Create your first playlist</h3>
+            <p>It's easy, we'll help you</p>
+            <button class="hovering">Create playlist</button>
+        </div>
+    </div>
+    <div class="login-section  ">
+        <div class="login">
+            <h2>You are using Aura-FM</h2>
+            <p>Please Log In to continue</p>
+            <button class="login-btn hovering">Log in</button>
+        </div>
+        
+    </div>
+
+    <div class="legal-links">
+        <a href="#">Legal</a>
+        <a href="#">Privacy Center</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookies</a>
+        <a href="#">About Ads</a>
+        <a href="#">Accessibility</a>
+        <p>© 2026 Aura FM</p>
+    </div>
+</div>
+
+<div class="right-container">
+    <h1 class="greeting"></h1>
+    <div class="filter-tabs">
+        <button class="hovering btn">Featured</button>
+        <button class="hovering btn">Charts</button>
+        <button class="hovering btn">New Releases</button>
+    </div>
+    <div class="albumCards">
+        <div class="card " id="card1">
+            <div class="innerCard blue"><img src="assets/music.svg" alt=""></div>
+            <h1>Chill Vibes</h1>
+            <p>Various Artists</p>
+        </div>
+        <div class="card" id="card2">
+            <div class="innerCard green"><img src="assets/music.svg" alt=""></div>
+            <h1>Lo-Fi Study</h1>
+            <p>Chillpop-Musics</p>
+        </div>
+        <div class="card" id="card3">
+            <div class="innerCard red"><img src="assets/music.svg" alt=""></div>
+            <h1>Acoustic Mornings</h1>
+            <p>Jamendo</p>
+        </div>
+        <div class="card" id="card4">
+            <div class="innerCard pink"><img src="assets/music.svg" alt=""></div>
+            <h1>Jazz Nights</h1>
+            <p>Free Music Archive</p>
+        </div>
+    </div>
+    <div class="FM-section">
+        <div class="fmtxt">
+            <img src="assets/radio.svg" alt="">
+            <h1>FM radio Stations</h1>
+        </div>
+        <div class="fmChannels">
+            <div class="channel">
+                <div class="innerfmbox blue">
+                    <img src="assets/boombox.svg" alt="">
+                </div>
+                <div class="fmboxtxt">
+                    <h2>Radio Mirchi</h2>
+                    <p>India-98.3</p>
+                </div>
+                
+            </div>
+            <div class="channel">
+                <div class="innerfmbox green">
+                    <img src="assets/boombox.svg" alt="">
+                </div>
+                <div class="fmboxtxt">
+                    <h2>Radio Mirchi</h2>
+                    <p>India-98.3</p>
+                </div>
+                
+            </div>
+            <div class="channel">
+                <div class="innerfmbox red">
+                    <img src="assets/boombox.svg" alt="">
+                </div>
+                <div class="fmboxtxt">
+                    <h2>Radio Mirchi</h2>
+                    <p>India-98.3</p>
+                </div>
+                
+            </div>
+            <div class="channel">
+                <div class="innerfmbox pink">
+                    <img src="assets/boombox.svg" alt="">
+                </div>
+                <div class="fmboxtxt">
+                    <h2>Radio Mirchi</h2>
+                    <p>India-98.3</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>  
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
