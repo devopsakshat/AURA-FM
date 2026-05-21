@@ -5,6 +5,7 @@
 }
 body{
   background-color: rgb(0, 0, 0);
+  padding-bottom: 80px; 
 }
 nav {
   display: flex;
@@ -317,4 +318,237 @@ img {
 .card:hover{
   background-color:rgb(109, 104, 104);
   transition: all 0.2s ease-in-out;
+}
+.profile-section{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.profile-photo{
+    border: 3px solid transparent;
+  border-radius: 50%;
+  background: linear-gradient(#000, #000) padding-box,
+              linear-gradient(135deg, #7F00FF, #38033f) border-box;
+  
+}
+
+.profile-dropdown{
+  display: none;
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background: #282828;
+  border-radius: 8px;
+  padding: 4px;
+  min-width: 160px;
+  z-index: 999;
+}
+
+.profile-dropdown a {
+  display: block;
+  color: white;
+  padding: 10px 14px;
+  font-size: 13px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.profile-dropdown a:hover {
+  background: #3a3a3a;
+}
+
+.profile-section:hover .profile-dropdown {
+  display: block;
+}
+.width-100{
+  width: 90%;
+}
+
+.outerbox{
+  width: 90%;
+  display: flex;
+  gap: 10px;
+  height: 5rem;
+  border-radius: 5px;
+  padding: 1rem;
+  color: white;
+  margin: 1rem;
+  align-items: center;
+}
+.outerbox:hover{
+  background-color: rgb(51, 47, 47);
+}
+.iconbox{
+  width: 3.5rem;
+  height: 3.5rem;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.hidden{
+  display: none;
+}
+
+.player-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: #181818;
+  border-top: 1px solid #282828;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  z-index: 1000;
+}
+
+.player-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 30%;
+}
+
+.player-thumb {
+  width: 52px;
+  height: 52px;
+  border-radius: 6px;
+  background: #282828;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.player-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.player-song {
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.player-artist {
+  color: #aaa;
+  font-size: 11px;
+}
+
+.like-btn {
+  color: #aaa;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.like-btn:hover { color: white; }
+
+.player-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 40%;
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.ctrl-btn {
+  color: #aaa;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.ctrl-btn:hover { color: white; }
+
+.play-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.1s ease-in-out;
+}
+
+.play-btn:hover { transform: scale(1.05); }
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.time {
+  color: #aaa;
+  font-size: 11px;
+  min-width: 30px;
+}
+
+.progress {
+  flex: 1;
+  height: 4px;
+  accent-color: white;
+  cursor: pointer;
+}
+
+.progress:hover { accent-color: #7C3AED; }
+
+.player-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 30%;
+  justify-content: flex-end;
+}
+
+.player-right svg {
+  color: #aaa;
+}
+
+.volume {
+  width: 90px;
+  height: 4px;
+  accent-color: white;
+  cursor: pointer;
+}
+
+.volume:hover { accent-color: #7C3AED; }
+
+.width{
+  width: 4rem;
+  height: 2rem;
+}
+.fm-locations{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 2rem;
+  margin-top: 10px;
+}
+
+.search-stations{
+  display: flex;
 }
