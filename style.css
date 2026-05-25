@@ -5,7 +5,7 @@
 }
 body{
   background-color: rgb(0, 0, 0);
-  padding-bottom: 80px; 
+  padding-bottom: 80px;
 }
 nav {
   display: flex;
@@ -13,10 +13,9 @@ nav {
   align-items: center;
   padding: 0 24px;
   height: 80px;
-  background-color:black;
+  background-color: black;
   color: white;
 }
-
 .leftnav {
   display: flex;
   align-items: center;
@@ -27,7 +26,7 @@ nav {
   gap: 5px;
 }
 .searchbox{
-  background-color:rgb(51, 47, 47) ;
+  background-color: rgb(51, 47, 47);
   width: 25rem;
   height: 3rem;
   border: none;
@@ -40,56 +39,63 @@ nav {
   align-items: center;
   gap: 12px;
 }
-
 img {
   display: block;
 }
 .leftcontainer{
-    width: 25vw;
-    background-color: rgb(31, 29, 29);
-    padding: 0.5rem;
-    border: none;
-    border-radius: 5px;
-    height: calc(100vh - 80px); /* 80px = teri navbar ki height */
-    overflow: hidden;
-    
+  width: 25vw;
+  background-color: rgb(31, 29, 29);
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  height: calc(100vh - 80px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .firstrow{
-    display: flex;
-    justify-content: space-between;
-    margin: 1rem;
-    gap: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  gap: 15px;
 }
-
 .firstrow p {
   color: white;
 }
 .secondrow{
-    display: flex;
-    justify-content: start;
-    margin:  0 1rem;
-    gap: 1rem;
+  display: flex;
+  justify-content: start;
+  margin: 0 1rem;
+  gap: 1rem;
 }
 .thirdrow{
-    display: flex;
-    margin: 1rem;
-    justify-content: space-between;
+  display: flex;
+  margin: 1rem;
+  justify-content: space-between;
 }
-
 .flex{
-    display: flex;
+  display: flex;
 }
 .btn{
-    background-color: rgba(87, 84, 84, 0.733);
-    color: rgb(219, 223, 219);
-    border: none;
-    border-radius: 20px;
-    padding-left:1rem;
-    padding-right: 1rem;
-    text-align: center;
-    height: 2.5rem;
-    margin-right: 5px;
+  background-color: rgba(87, 84, 84, 0.733);
+  color: rgb(219, 223, 219);
+  border: none;
+  border-radius: 20px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+  height: 2.5rem;
+  margin-right: 5px;
+  cursor: pointer;
 }
+
+/* active tab gets white background */
+.active-tab {
+  background-color: white !important;
+  color: black !important;
+  font-weight: 600;
+}
+
 .signupbtn{
   background-color: transparent;
   color: rgb(153, 150, 150);
@@ -104,13 +110,12 @@ img {
 .signupbtn:hover{
   color: white;
   transform: scale(1.05);
-  transition-duration: 0.2ms;
   transition: all 0.2s ease-in-out;
 }
 .loginbtn{
   border: none;
   border-radius: 40px;
-  background-color: white(95, 92, 92);
+  background-color: white;
   color: rgb(0, 0, 0);
   height: 2.7rem;
   width: 6rem;
@@ -119,14 +124,11 @@ img {
 }
 .hovering:hover{
   transform: scale(1.05);
-  transition-duration: 0.2ms;
   transition: all 0.2s ease-in-out;
 }
-
 .btn:hover{
   background-color: rgb(141, 137, 137);
 }
-
 .library-section{
   background-color: rgb(51, 47, 47);
   border: none;
@@ -135,14 +137,11 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
-  
 }
 .library-empty{
   margin: 2rem;
   display: flex;
   flex-direction: column;
-  
 }
 .library-empty button{
   background-color: white;
@@ -181,12 +180,11 @@ img {
 }
 .legal-links {
   padding: 16px;
-  margin-top: auto; /* pushes to bottom */
+  margin-top: auto;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
-
 .legal-links a {
   color: #aaa;
   font-size: 11px;
@@ -195,7 +193,6 @@ img {
 .legal-links a:hover {
   color: white;
 }
-
 .legal-links p {
   width: 100%;
   color: #aaa;
@@ -208,13 +205,13 @@ img {
   padding: 1rem;
 }
 .right-container{
-    width: 75vw;
-    background-color: rgb(31, 29, 29);
-    padding: 0.5rem;
-    border: none;
-    border-radius: 5px;
-    height: calc(100vh - 80px); /* 80px = teri navbar ki height */
-    overflow: hidden;
+  width: 75vw;
+  background-color: rgb(31, 29, 29);
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  height: calc(100vh - 80px);
+  overflow-y: auto;
 }
 .container{
   display: flex;
@@ -222,6 +219,9 @@ img {
 }
 .filter-tabs{
   padding-left: 1rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  gap: 4px;
 }
 .innerCard{
   height: 10rem;
@@ -242,12 +242,11 @@ img {
   display: flex;
   flex-direction: column;
   color: white;
-  
+  cursor: pointer;
 }
-
 .card h1{
   font-size: 1.3rem;
-  padding-left:13px;
+  padding-left: 13px;
 }
 .card p{
   font-size: 0.8rem;
@@ -255,6 +254,7 @@ img {
 }
 .albumCards{
   display: flex;
+  flex-wrap: wrap; /* so cards wrap on smaller screens */
 }
 .blue{
   background-color: rgb(33, 33, 88);
@@ -268,7 +268,6 @@ img {
 .pink{
   background-color: rgb(223, 120, 137);
 }
-
 .section-divider {
   border: none;
   border-top: 5px solid #2a2a2a;
@@ -293,6 +292,7 @@ img {
   justify-content: space-around;
   align-items: center;
   color: white;
+  cursor: pointer;
 }
 .channel h2{
   font-size: 1rem;
@@ -309,14 +309,16 @@ img {
 .fmChannels{
   display: flex;
   flex-direction: row;
-  gap: 1.6rem;
+  flex-wrap: wrap; 
+  gap: 1rem;
+  padding: 1rem;
 }
 .channel:hover{
-  background-color:rgb(109, 104, 104) ;
+  background-color: rgb(109, 104, 104);
   transition: all 0.2s ease-in-out;
 }
 .card:hover{
-  background-color:rgb(109, 104, 104);
+  background-color: rgb(109, 104, 104);
   transition: all 0.2s ease-in-out;
 }
 .profile-section{
@@ -326,15 +328,13 @@ img {
   position: relative;
   cursor: pointer;
 }
-
 .profile-photo{
-    border: 3px solid transparent;
+  border: 3px solid transparent;
   border-radius: 50%;
+  width: 60px;
   background: linear-gradient(#000, #000) padding-box,
               linear-gradient(135deg, #7F00FF, #38033f) border-box;
-  
 }
-
 .profile-dropdown{
   display: none;
   position: absolute;
@@ -346,7 +346,6 @@ img {
   min-width: 160px;
   z-index: 999;
 }
-
 .profile-dropdown a {
   display: block;
   color: white;
@@ -358,14 +357,9 @@ img {
 .profile-dropdown a:hover {
   background: #3a3a3a;
 }
-
 .profile-section:hover .profile-dropdown {
   display: block;
 }
-.width-100{
-  width: 90%;
-}
-
 .outerbox{
   width: 90%;
   display: flex;
@@ -391,10 +385,72 @@ img {
   justify-content: center;
   margin-right: 10px;
 }
-
 .hidden{
   display: none;
 }
+   FM FILTER PILL
+.fm-pills-row {
+  display: flex;
+  gap: 8px;
+  padding: 0.5rem 1rem;
+  flex-wrap: wrap;
+}
+.fm-pill {
+  height: 2rem;
+  padding: 0 14px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.active-pill {
+  background-color: #7C3AED !important;
+  color: white !important;
+}
+
+
+.upload-area {
+  margin: 1.5rem 1rem 1rem 1rem;
+}
+.upload-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 2px dashed rgb(100, 96, 96);
+  border-radius: 12px;
+  padding: 2rem;
+  cursor: pointer;
+  color: #aaa;
+  transition: all 0.2s ease-in-out;
+}
+.upload-label:hover {
+  border-color: #7C3AED;
+  color: white;
+}
+.upload-label img {
+  width: 36px;
+  height: 36px;
+  opacity: 0.6;
+  margin: 0 auto;
+}
+.upload-label p {
+  font-size: 14px;
+  font-weight: 500;
+}
+.upload-label span {
+  font-size: 11px;
+  color: #666;
+}
+#file-input {
+  display: none;
+}
+.local-tracks-list {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
 
 .player-bar {
   position: fixed;
@@ -410,14 +466,12 @@ img {
   padding: 0 24px;
   z-index: 1000;
 }
-
 .player-left {
   display: flex;
   align-items: center;
   gap: 12px;
   width: 30%;
 }
-
 .player-thumb {
   width: 52px;
   height: 52px;
@@ -426,38 +480,31 @@ img {
   flex-shrink: 0;
   overflow: hidden;
 }
-
 .player-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .player-info {
   display: flex;
   flex-direction: column;
   gap: 2px;
 }
-
 .player-song {
   color: white;
   font-size: 13px;
   font-weight: 500;
 }
-
 .player-artist {
   color: #aaa;
   font-size: 11px;
 }
-
 .like-btn {
   color: #aaa;
   cursor: pointer;
   transition: color 0.2s ease-in-out;
 }
-
 .like-btn:hover { color: white; }
-
 .player-center {
   display: flex;
   flex-direction: column;
@@ -465,21 +512,17 @@ img {
   gap: 6px;
   width: 40%;
 }
-
 .player-controls {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-
 .ctrl-btn {
   color: #aaa;
   cursor: pointer;
   transition: color 0.2s ease-in-out;
 }
-
 .ctrl-btn:hover { color: white; }
-
 .play-btn {
   width: 36px;
   height: 36px;
@@ -492,31 +535,26 @@ img {
   justify-content: center;
   transition: transform 0.1s ease-in-out;
 }
-
 .play-btn:hover { transform: scale(1.05); }
-
 .progress-bar {
   display: flex;
   align-items: center;
   gap: 8px;
   width: 100%;
+  transition: opacity 0.3s ease;
 }
-
 .time {
   color: #aaa;
   font-size: 11px;
   min-width: 30px;
 }
-
 .progress {
   flex: 1;
   height: 4px;
   accent-color: white;
   cursor: pointer;
 }
-
 .progress:hover { accent-color: #7C3AED; }
-
 .player-right {
   display: flex;
   align-items: center;
@@ -524,31 +562,137 @@ img {
   width: 30%;
   justify-content: flex-end;
 }
-
 .player-right svg {
   color: #aaa;
 }
-
 .volume {
   width: 90px;
   height: 4px;
   accent-color: white;
   cursor: pointer;
 }
-
 .volume:hover { accent-color: #7C3AED; }
 
-.width{
-  width: 4rem;
-  height: 2rem;
-}
-.fm-locations{
-  display: flex;
-  justify-content: space-between;
-  margin-right: 2rem;
-  margin-top: 10px;
+
+/* =============================================
+   MOBILE RESPONSIVENESS (Safe Version)
+   ============================================= */
+
+/* TABLETS & SMALL DESKTOPS (Max 900px) */
+@media screen and (max-width: 900px) {
+  .leftcontainer {
+    display: none; /* Hides the sidebar gracefully */
+  }
+  .right-container {
+    width: 100%; /* Uses % instead of vw to prevent horizontal scroll bugs */
+  }
+  .searchbox {
+    width: 15rem; /* Shrinks searchbar so navbar doesn't break */
+  }
+  .player-left {
+    width: 40%;
+  }
+  .player-center {
+    width: 60%;
+  }
+  .player-right {
+    display: none; /* Hides volume on smaller screens to free up space */
+  }
 }
 
-.search-stations{
-  display: flex;
+/* MOBILE PHONES (Max 600px) */
+@media screen and (max-width: 600px) {
+  nav {
+    padding: 0 10px;
+    gap: 8px;
+  }
+  
+  .leftnav {
+    gap: 8px;
+  }
+
+  /* Collapse searchbar to fit phone screens */
+  .searchbox {
+    width: 130px;
+    padding: 0.5rem;
+  }
+
+  .loginbtn {
+    width: 4.5rem;
+    font-size: 14px;
+  }
+
+  /* Center the cards so they look neat when wrapping */
+  .albumCards, .fmChannels {
+    justify-content: center;
+  }
+
+  /* Scale down the outer card */
+  .card {
+    width: 10rem;
+    height: 13.5rem;
+    margin: 10px;
+  }
+
+  /* OVERRIDE: Scale down the inner card so it doesn't break out of the parent */
+  .innerCard {
+    width: 8.5rem;
+    height: 8.5rem;
+    margin: 0.75rem auto; /* Centers it inside the 10rem card */
+    padding: 0; 
+  }
+
+  /* Radio stations take up the full width of the mobile screen */
+  .channel {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  /* Shrink the bottom player elements */
+  .player-bar {
+    padding: 0 10px;
+  }
+  
+  .player-left {
+    width: 50%;
+    gap: 8px;
+  }
+
+  .player-thumb {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Prevent long song titles from pushing the controls off screen */
+  .player-song {
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90px;
+  }
+
+  .player-artist {
+    font-size: 10px;
+  }
+
+  .player-center {
+    width: 50%;
+    gap: 4px;
+  }
+
+  .player-controls {
+    gap: 12px;
+  }
+
+  /* Shrink player buttons slightly */
+  .play-btn {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .play-btn svg {
+    width: 18px;
+    height: 18px;
+  }
 }
