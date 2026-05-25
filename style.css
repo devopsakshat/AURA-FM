@@ -590,6 +590,7 @@ img {
 
 /* MOBILE PHONES (Max 600px) */
 /* 1. NAVBAR FIX - Home button completely hidden on phone width */
+@media screen and (max-width: 600px) {
   nav {
     flex-wrap: wrap !important;
     height: auto !important;
