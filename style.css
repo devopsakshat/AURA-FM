@@ -573,229 +573,164 @@ img {
 }
 .volume:hover { accent-color: #7C3AED; }
 
-
 /* =============================================
-   MOBILE RESPONSIVENESS (Safe Version)
+   SPOTIFY-STYLE MOBILE RESPONSIVENESS (V3 - DEFINITIVE)
    ============================================= */
 
-/* TABLETS & SMALL DESKTOPS (Max 900px) */
+/* TABLETS & SMALL LAPTOPS (Max 900px) */
 @media screen and (max-width: 900px) {
-  .leftcontainer {
-    display: none; /* Hides the sidebar gracefully */
+  .leftcontainer { display: none !important; }
+  .right-container { 
+    width: 100% !important; 
+    height: 100vh; 
+    padding-bottom: 90px; 
   }
-  .right-container {
-    width: 100%; /* Uses % instead of vw to prevent horizontal scroll bugs */
-  }
-  .searchbox {
-    width: 15rem; /* Shrinks searchbar so navbar doesn't break */
-  }
-  .player-left {
-    width: 40%;
-  }
-  .player-center {
-    width: 60%;
-  }
-  .player-right {
-    display: none; /* Hides volume on smaller screens to free up space */
-  }
+  .player-right { display: none !important; } /* Hide volume */
 }
 
 /* MOBILE PHONES (Max 600px) */
-@media screen and (max-width: 600px) {
+/* 1. NAVBAR FIX - Home button completely hidden on phone width */
   nav {
-    padding: 0 10px;
-    gap: 8px;
+    flex-wrap: wrap !important;
+    height: auto !important;
+    padding: 12px 15px !important;
+    justify-content: space-between !important;
+  }
+  .leftnav { 
+    width: auto !important; 
+    gap: 15px !important; 
   }
   
-  .leftnav {
-    gap: 8px;
+  /* Hides the home button completely on smartphones */
+  .homebtn {
+    display: none !important;
+  }
+  
+  .rightnav { 
+    width: auto !important; 
+    gap: 15px !important; 
+  }
+  .middlenav {
+    width: 100% !important;
+    order: 3 !important;
+    margin-top: 12px !important;
+  }
+  .searchbox { 
+    width: 100% !important; 
+    border-radius: 20px;
+    height: 2.5rem;
+  }
+  .loginbtn { 
+    width: auto !important; 
+    padding: 0 15px !important; 
+    height: 30px !important; 
+    font-size: 12px !important; 
+  }
+  .signupbtn {
+    font-size: 12px !important;
   }
 
-  /* Collapse searchbar to fit phone screens */
-  .searchbox {
-    width: 130px;
-    padding: 0.5rem;
-  }
-
-  .loginbtn {
-    width: 4.5rem;
-    font-size: 14px;
-  }
-
-  /* Center the cards so they look neat when wrapping */
+  /* 2. MUSIC CARDS - Perfect 2-Column Grid */
   .albumCards, .fmChannels {
-    justify-content: center;
-  }
-
-  /* Scale down the outer card */
-  .card {
-    width: 10rem;
-    height: 13.5rem;
-    margin: 10px;
-  }
-
-  /* OVERRIDE: Scale down the inner card so it doesn't break out of the parent */
-  .innerCard {
-    width: 8.5rem;
-    height: 8.5rem;
-    margin: 0.75rem auto; /* Centers it inside the 10rem card */
-    padding: 0; 
-  }
-
-  /* Radio stations take up the full width of the mobile screen */
-  .channel {
-    width: 100%;
-    margin: 10px 0;
-  }
-
-  /* Shrink the bottom player elements */
-  .player-bar {
-    padding: 0 10px;
-  }
-  
-  .player-left {
-    width: 50%;
-    gap: 8px;
-  }
-
-  .player-thumb {
-    width: 40px;
-    height: 40px;
-  }
-
-  /* Prevent long song titles from pushing the controls off screen */
-  .player-song {
-    font-size: 12px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 90px;
-  }
-
-  .player-artist {
-    font-size: 10px;
-  }
-
-  .player-center {
-    width: 50%;
-    gap: 4px;
-  }
-
-  .player-controls {
-    gap: 12px;
-  }
-
-  /* Shrink player buttons slightly */
-  .play-btn {
-    width: 32px;
-    height: 32px;
-  }
-  
-  .play-btn svg {
-    width: 18px;
-    height: 18px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .leftcontainer {
-    display: none;
-  }
-  .right-container {
-    width: 100%;
-  }
-  .searchbox {
-    width: 12rem;
-  }
-  .player-left {
-    width: 45%;
-  }
-  .player-center {
-    width: 55%;
-  }
-  .player-right {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  nav {
-    padding: 0 12px;
-  }
-  .leftnav {
-    gap: 8px;
-  }
-  .searchbox {
-    width: 9rem;
-    padding: 0.5rem;
-  }
-  .loginbtn {
-    width: 4.5rem;
-    height: 2.2rem;
-    font-size: 14px;
-  }
-  .greeting {
-    font-size: 1.2rem;
-    padding: 0.5rem 1rem;
-  }
-  .albumCards, .fmChannels {
-    justify-content: center;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+    padding: 10px !important;
   }
   .card {
-    width: 42%;
-    height: 12rem;
-    margin: 8px;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding-bottom: 10px;
   }
   .innerCard {
-    width: 100%;
-    height: 7rem;
-    margin: 0;
-    padding: 0;
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 1 / 1 !important; /* Forces perfect square */
+    margin: 0 !important;
+    padding: 0 !important;
   }
-  .card h1 {
-    font-size: 1rem;
-    padding-top: 8px;
+  .card h1 { 
+    font-size: 13px !important; 
+    margin-top: 8px; 
+    padding: 0 5px; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; /* ... for long text */
   }
-  .channel {
-    width: 100%;
-    margin: 8px 16px;
+  .card p { 
+    font-size: 11px !important; 
+    padding: 0 5px; 
+  }
+
+  /* 3. FM RADIO CARDS */
+  .channel { 
+    width: 100% !important; 
+    margin: 0 !important; 
+  }
+  .fm-pills-row {
+    padding: 10px;
+    justify-content: flex-start;
+    overflow-x: auto; /* Allow scrolling pills horizontally if needed */
+    flex-wrap: nowrap;
+  }
+  .fm-pill { flex-shrink: 0; }
+
+  /* 4. BOTTOM PLAYER BAR - Bulletproof Fixed Placement */
+  body {
+    padding-bottom: 80px !important; /* Space so list doesn't hide behind player */
   }
   .player-bar {
-    padding: 0 12px;
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 70px !important;
+    background: #181818 !important;
+    border-top: 1px solid #282828;
+    padding: 0 10px !important;
+    z-index: 99999 !important; /* Always on top */
+    box-sizing: border-box !important;
   }
-  .player-left {
-    width: 50%;
-    gap: 6px;
+  
+  .player-left { 
+    width: 55% !important; 
+    gap: 10px !important; 
   }
-  .player-thumb {
-    width: 38px;
-    height: 38px;
+  .player-thumb { 
+    width: 45px !important; 
+    height: 45px !important; 
   }
-  .player-song {
-    font-size: 11px;
-    max-width: 80px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  .player-song { 
+    font-size: 12px !important; 
+    max-width: 100px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
   }
-  .player-artist {
-    font-size: 9px;
+  .player-artist { 
+    font-size: 10px !important; 
   }
-  .player-center {
-    width: 50%;
+  
+  .player-center { 
+    width: 45% !important; 
+    gap: 4px !important;
   }
-  .player-controls {
-    gap: 12px;
+  .player-controls { 
+    gap: 12px !important; 
   }
-  .play-btn {
-    width: 32px;
-    height: 32px;
+  .play-btn { 
+    width: 32px !important; 
+    height: 32px !important; 
   }
   .play-btn svg {
     width: 16px;
     height: 16px;
   }
-  .fm-pills-row {
-    justify-content: center;
+  /* Compact the progress bar so it fits */
+  .progress-bar { 
+    gap: 5px !important; 
+    width: 100% !important;
   }
+  .time { font-size: 9px !important; min-width: 20px !important; }
 }
